@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 576px) {
     .breadcrumb .breadcrumb-item > * {
         max-width: 20vw;

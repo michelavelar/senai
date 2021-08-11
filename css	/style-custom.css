@@ -1,0 +1,30 @@
+@media (min-width: 576px) {
+    .breadcrumb .breadcrumb-item > * {
+        max-width: 20vw;
+    }
+
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+        content: "\E315";
+    }
+}
+
+
+.breadcrumb .breadcrumb-item:first-child > * {
+    font-size: 19px;
+}
+
+
+.errors{
+    color: red;
+}
+
+.pic-with-overlay-1 {
+    height: 366.5px;
+}
+
+
+@media (min-width: 768px) {
+    .bb-red {
+        padding: 50px 0 20px 0;
+    }
+}

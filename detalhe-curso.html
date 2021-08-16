@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="ISO-8859-1 " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="website" content="Portal SENAI-SP">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -15,20 +15,21 @@
 
         <title>SENAI - Portal - Home</title>
 
-        
-
     <link href="https://hportal.sp.senai.br/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    <!-- <link href="https://hportal.sp.senai.br/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://hportal.sp.senai.br/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link href="https://hportal.sp.senai.br/css/style.css" rel="stylesheet" />
     <link href="https://hportal.sp.senai.br/css/style-custom.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link href="https://hportal.sp.senai.br/css/pagina.css" rel="stylesheet">
+      
+       
 
 </head>
-<body class="menu-transparent" style="background-image: url(&quot;https://hportal.sp.senai.br/images/bg-pesquisa.jpg&quot;);">
+<body class="menu-transparent" style="background-image: url('https://hportal.sp.senai.br/images/bg-pesquisa.jpg'); background-position: top center">
     <header id="menu-site">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top align-items-center pt-lg-3">
             <div class="barra-grupo-fiesp d-lg-block pr-1 pr-lg-0 pr-md-0">
@@ -660,13 +661,397 @@
         
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 800; 
+    }
+
+    .btn-primary {
+  color: #ffffff !important;
+  background-color: #dc233c;
+  border-color: #dc233c;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #c20717 !important;
+  border-color: #aa0614 !important;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #dc233c;
+  border-color: #dc233c;
+}
+
+.btn.btn-outline-primary {
+  border-color: #dc233c;
+  color: #dc233c;
+}
+.btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active, .btn.btn-outline-primary.active {
+  background-color: #c20717;
+  border-color: #aa0614;
+  color: #FFF;
+}
+.btn.btn-outline-primary.disabled:hover, .btn.btn-outline-primary.disabled:focus, .btn.btn-outline-primary.disabled:active, .btn.btn-outline-primary.disabled.active, .btn.btn-outline-primary[disabled]:hover, .btn.btn-outline-primary[disabled]:focus, .btn.btn-outline-primary[disabled]:active, .btn.btn-outline-primary[disabled].active {
+  background-color: #dc233c;
+  border-color: #dc233c;
+}
+     
+    .breadcrumb .breadcrumb-item {
+        display: inline-block;
+    }
+
+    
+
+    .badge-primary {
+        background-color: #dc233c;
+    }
+
+    .badge-secondary {
+        background-color: transparent;
+        color: #333333;
+        border: 1px solid #333333;
+    }
+
+    .senai-page .card .card-text{
+        font-size: 15px;
+        line-height: 20px !important;
+    }
+
+    .senai-page .card .card-title {
+        padding: 10px 0 0 0;
+        text-transform: uppercase;
+    }
+
+    .senai-page .card p{
+        line-height: 20px;
+    }
+
+    .senai-page .card-body .horario {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+
+    .senai-page .card i { 
+        color: #dc233c;
+        margin: 0px 0 0 0;
+        width: 15px;
+        height: 20px;
+        float: left;
+    }
+
+    .senai-page .list-group-item p{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .senai-page .card .btn-turmas {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        background: #dc233c;
+    }
+    .senai-page .card .btn-turmas:hover {
+        background: #990000;
+    }
+
+    .senai-page .card .social-wrapper {
+        font-size: 15px;
+        color: #666;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .senai-page .card .share-container  {
+        font-size: 22px;
+    }
+
+    
+
+    .card-columns {
+        column-count: 1;
+    }
+     #filtro .card {
+        border: 0;
+        border-radius: 0;
+    }
+
+    #filtro .card-header {
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+    }
+    #filtro .card-header button {
+        color: #666;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #filtro .btn-group, 
+    #filtro .btn-group-vertical { 
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+         }
+ 
+
+    #filtro .btn-filtro {
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
+        color: #666;
+        border: none;
+        border-radius: 0;
+    }
+    #filtro .btn-filtro:hover {
+        color: #fff;
+        background: #dc233c;
+    }
+    #filtro .btn-filtro:not(:disabled):not(.disabled).active, 
+    #filtro .btn-filtro:not(:disabled):not(.disabled):active, 
+    .show>#filtro .btn-filtro.dropdown-toggle {
+        color: #fff;
+        background: #dc233c;
+        border-color: #dc233c;
+    }
+
+
+
+    @media(min-width: 992px) {
+        .card-columns {
+            column-count: 2;
+        }
+
+        .senai-page .list-group-item p{
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        .senai-page .card .btn-turmas {
+            font-size: 11px; 
+        }
+
+        .senai-page .card .social-wrapper {
+        font-size: 13px;
+        }
+
+        .senai-page .card .share-container  {
+            font-size: 18px;
+        }
+
+    }
+
+    @media(min-width: 1200px) {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+
+    /*MENU*/
+
+.panel {
+  position: fixed;
+  left: -245px;
+  width: 290px;
+  z-index: 99;
+  background: #ffff;
+}
+
+ul.models{
+  width:245px;
+  float:left;
+  margin:0;
+  padding:0;
+}
+ul.models > li{
+  background: #f2f2f2;
+  color: #5f5f71;
+  list-style: none;
+  /*height:96px;*/
+}
+ul.models > li > a{
+  display:block;
+  text-align:center;
+  /*line-height:96px;*/
+  text-decoration:none;
+  color: #5f5f71;
+  font-weight:400;
+}
+
+.panel > .menu-button{
+  width:43px;
+  height:288px;
+  float:right;
+    background: #dc233c;
+  position:relative;
+  cursor:pointer; 
+}
+.panel > .menu-button a{
+  display:block;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  
+  color: #fff;
+  font-size:1em;
+  font-weight:300;
+  
+    text-decoration: none;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  transform: rotate(-90deg);
+}
+
+.arrow{
+  position: absolute;
+  top: 45%;
+  left: 112%;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);  
+  transform: rotate(135deg);
+  transition: transform .3s linear;
+}
+
+.arrow.open {
+  transform: rotate(315deg);
+  transition: transform .3s linear;                         
+}
+
+
+
+/* SHARE 
+-------------------------------------------------- */
+.sharepost {
+    color: #fff;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left
+}
+
+    .sharepost ul {
+        padding: 0px;
+        background-color: white;
+        display: block;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+        z-index: 1;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+
+    .sharepost hr {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        background: #e9e9e9;
+        border: 0 none;
+        display: block;
+        height: 1px;
+        width: 100%;
+    }
+
+    .sharepost ul li {
+        display: inline-block;
+        float: left;
+        margin: 0 3px 5px 0;
+    }
+
+        .sharepost ul li:hover {
+            background-color: #222;
+        }
+
+        .sharepost ul li a .fa {
+            color: #ffffff !important ;
+        }
+
+    .sharepost .icon {
+        font-size: 22px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        padding-top: 2px;
+    }
+
+    .facebook {
+    background-color: #3c599f
+    }
+
+    .twitter {
+        background-color: #02acec
+    }
+
+    .whatsapp {
+        background-color: #25d366
+    }
+
+    .linkedin {
+        background-color: #017eb4
+    }
+
+
+r
+    
+</style>
+
     <div class="container">
         <div class="pagina-texto-shadow">
             <div class="col-12 pl-0 pr-0">
                 <div class="pagina-texto">
                     <div class="row ">
+                        <div class="col-12">
+                            <span class="badge badge-pill badge-primary">Capital</span> <span class="badge badge-pill badge-secondary">Presencial</span>
+                        </div>
                         <div class="col-md-12 mt-5 mb-5 d-flex align-content-center justify-content-center text-center">
                             <div>
+
                                 <h1 class="text-black">
                                     PROTEÇÃO E CONTROLE DE SISTEMAS ELÉTRICOS DE POTÊNCIA  
                                 </h1>
@@ -711,16 +1096,81 @@
                                 </ul>
 
                                 <div>
-                                    <a href="/" class="btn btn-primary btn-voltar p-2">
-                                       <i class="fa fa-home"></i>
-                                        Voltar para Home
+                                    <a href="javaScript:history.back();" class="btn btn-primary btn-voltar p-2">
+                                       <i class="fa fa-angle-left"></i>
+                                        Voltar
                                     </a>
                                 </div>
 
                                 </div>
-                                <div class="col-md-4 offset-md-1">
-                                    col 4
-                                </div>
+                                <aside class="col-md-5 col-lg-4 offset-lg-1">
+              <div class="card lateral">
+                <div class="card-header"><h5>Informações</h5></div>
+                <div class="card-body">
+                  <p><strong>Data:</strong><br>
+                   03, 10, 17, 24 e 31 de agosto
+                 </p>
+
+                 <p><strong>Horário:</strong><br>
+                  Das 18h às 21h
+                </p>
+
+                <p><strong>Carga horária: </strong><br>
+                12 horas de treinamento e 02 horas de mentoria (em 31/08) </p>
+
+                <p><strong>Investimento: </strong><br>
+                  <strong>R$ 360,00</strong> <br>
+                (associados ao Ciesp ou aos Sindicatos filiados à Fiesp) </p>
+
+                <p>  <strong>R$ 540,00</strong> <br>
+                (não associado)</p>
+                
+                <p class="info"> A confirmação do curso dependerá do número de participantes inscritos. Após a confirmação do curso, não haverá devolução do investimento, podendo somente 70% do valor deste ser transferido para outro curso. O certificado será entregue para alunos com frequência mínima de 75%. </p>
+
+                <p><strong>Área do Curso: </strong><br>
+                Gestão  </p>
+
+                <h4>Vagas limitadas</h4>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://www.fourpass.com.br/evento/curso-gestao-emocional-com-pnl-para-gestores-e-lideres-basico-ciesp-sorocaba" target="_blank" class="btn btn-light">INSCREVA-SE</a>
+              </div>
+            </div>
+            <div class="sharepost ">
+
+              <ul class="mt-3 mx-auto">
+
+                <li class="facebook">
+                  <div class="icon">
+                    <a target="_blank" href="https://facebook.com/sharer.php?u=http://cursos.ciesp.com.br/cursos/08-agosto/gestao-emocional-pnl-gestores-lideres.html" title="para compartilhar página no facebook"><span class="d-none">para compartilhar página no facebook</span><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </div>
+                </li>
+                <li class="linkedin">
+                  <div class="icon">
+                    <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://cursos.ciesp.com.br/cursos/08-agosto/gestao-emocional-pnl-gestores-lideres.html&amp;title=Curso Gestão Emocional com PNL para Gestores e Líderes – Básico" title="para compartilhar página no Linkedin"><span class="d-none">para compartilhar página no Linkedin</span><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </li>
+                <li class="twitter">
+                  <div class="icon">
+                    <a target="_blank" href="https://twitter.com/intent/tweet?url=http://cursos.ciesp.com.br/cursos/08-agosto/gestao-emocional-pnl-gestores-lideres.html&amp;text=Curso Gestão Emocional com PNL para Gestores e Líderes – Básico" title="para compartilhar página no twitter"><span class="d-none">para compartilhar página no twitter</span><i class="fa fa-twitter"></i></a>
+                  </div>
+                </li>
+                <li class="whatsapp d-none d-md-block">
+                  <div class="icon">
+                    <a target="_blank" href="https://web.whatsapp.com/send?text=http://cursos.ciesp.com.br/cursos/08-agosto/gestao-emocional-pnl-gestores-lideres.html" data-action="share/whatsapp/share" title="para compartilhar página no whatsapp"><span class="d-none">para compartilhar página no whatsapp</span><i class="fa fa-whatsapp"></i></a>
+                  </div>
+                </li>
+                <li class="whatsapp d-md-none">
+                  <div class="icon">
+                    <a target="_blank" href="whatsapp://send?text=Curso Gestão Emocional com PNL para Gestores e Líderes – Básico?url=http://cursos.ciesp.com.br/cursos/08-agosto/gestao-emocional-pnl-gestores-lideres.html" title="para compartilhar página no aplicativo whatsapp"><span class="d-none">para compartilhar página no aplicativo whatsapp</span><i class="fa fa-whatsapp"></i></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="clearfix"></div>
+
+            </div>
+          </aside>
                             </div>
                         </div> <!-- FIM CONTEUDO CURSO -->
 

@@ -20,8 +20,8 @@
         
 
     <link href="https://hportal.sp.senai.br/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    <!-- <link href="https://hportal.sp.senai.br/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://hportal.sp.senai.br/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -690,16 +690,22 @@
     h1, h2, h3, h4, h5, h6 {
         font-weight: 800; 
     }
+.btn {
 
-    .btn-primary {
-  color: #ffffff !important;
-  background-color: #dc233c;
-  border-color: #dc233c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-primary {
+    color: #ffffff !important;
+    background-color: #dc233c;
+    border-color: #dc233c;
+    font-weight: 600;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active {
+.btn-primary.active,
+.btn-primary.disabled {
   background-color: #c20717 !important;
   border-color: #aa0614 !important;
 }
@@ -723,12 +729,22 @@ fieldset[disabled] .btn-primary.active {
   border-color: #dc233c;
   color: #dc233c;
 }
-.btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active, .btn.btn-outline-primary.active {
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus, 
+.btn-outline-primary:active, 
+.btn-outline-primary.active {
   background-color: #c20717;
   border-color: #aa0614;
   color: #FFF;
 }
-.btn.btn-outline-primary.disabled:hover, .btn.btn-outline-primary.disabled:focus, .btn.btn-outline-primary.disabled:active, .btn.btn-outline-primary.disabled.active, .btn.btn-outline-primary[disabled]:hover, .btn.btn-outline-primary[disabled]:focus, .btn.btn-outline-primary[disabled]:active, .btn.btn-outline-primary[disabled].active {
+.btn.btn-outline-primary.disabled:hover, 
+.btn.btn-outline-primary.disabled:focus, 
+.btn.btn-outline-primary.disabled:active, 
+.btn.btn-outline-primary.disabled.active, 
+.btn.btn-outline-primary[disabled]:hover, 
+.btn.btn-outline-primary[disabled]:focus, 
+.btn.btn-outline-primary[disabled]:active, 
+.btn.btn-outline-primary[disabled].active {
   background-color: #dc233c;
   border-color: #dc233c;
 }
@@ -856,6 +872,41 @@ fieldset[disabled] .btn-primary.active {
         color: #fff;
         background: #dc233c;
         border-color: #dc233c;
+    }
+
+
+    /*MODAL*/
+
+    #turmasModal .btn-turmas{
+        text-align: left;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: lighter;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+        background-color: transparent; 
+    }
+
+    #turmasModal .btn-turmas strong {
+        font-weight: 600;
+    }
+
+    #turmasModal .btn-turmas:hover,
+    #turmasModal .btn-turmas:active, 
+    #turmasModal .btn-turmas.active {
+        color: #fff;
+        background-color: #dc233c;
+        border: 1px solid red;
+        box-shadow: 0 0 1.4em rgba(0, 0, 0, 0.5);
+    }
+
+    #turmasModal .list-group-item {
+        background-color: transparent;
+    }
+
+    #turmasModal .card {
+        margin: 0 !important;background-color: transparent; 
     }
 
 
@@ -1246,7 +1297,7 @@ r
                                 </p> 
                             </div>
                             <div class="col-3">
-                                <a id="" class="btn btn-turmas btn-sm float-right" href="detalhe-curso.html">TURMAS</a>
+                                <a id="" href="#" class="btn btn-turmas btn-sm float-right" data-toggle="modal" data-target="#turmasModal">TURMAS</a>
                             </div>
                             <div class="col-12 mt-2">
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rua Vereador Sergio Leopoldino Alves, 500 - SP</p>
@@ -1263,7 +1314,7 @@ r
                                 </p> 
                             </div>
                             <div class="col-3">
-                                <a id="" class="btn btn-turmas btn-sm float-right" href="detalhe-curso.html">TURMAS</a>
+                                <a id="" class="btn btn-turmas btn-sm float-right" href="#">TURMAS</a>
                             </div>
                             <div class="col-12 mt-2">
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rua Vereador Sergio Leopoldino Alves, 500 - SP</p>
@@ -1280,7 +1331,7 @@ r
                                 </p> 
                             </div>
                             <div class="col-3">
-                                <a id="" class="btn btn-turmas btn-sm float-right" href="detalhe-curso.html">TURMAS</a>
+                                <a id="" class="btn btn-turmas btn-sm float-right" href="#">TURMAS</a>
                             </div>
                             <div class="col-12 mt-2">
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rua Vereador Sergio Leopoldino Alves, 500 - SP</p>
@@ -1297,7 +1348,7 @@ r
                                 </p> 
                             </div>
                             <div class="col-3">
-                                <a id="" class="btn btn-turmas btn-sm float-right" href="detalhe-curso.html">TURMAS</a>
+                                <a id="" class="btn btn-turmas btn-sm float-right" href="#">TURMAS</a>
                             </div>
                             <div class="col-12 mt-2">
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rua Vereador Sergio Leopoldino Alves, 500 - SP</p>
@@ -1307,8 +1358,12 @@ r
                   </ul>
                   <div class="card-footer">
                     <div class="social-wrapper">
-                       <strong>Compartilhar:</strong> 
-                       <div class="share-container-web float-right" style="display: none;">
+                        <div  class="row no-gutters"> 
+                            <div class="col-7">
+                                 <a id="" href="#" class="btn btn-outline-primary btn-sm btn-block float-right" data-toggle="modal" data-target="#infoCursoModal">Informações</a>
+                             </div> 
+                             <div class="col-5">
+                                 <div class="share-container-web float-right" style="display: none;">
                             <a id="" class="social p-4" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a id="" class="social p-4" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a id="" class="social p-4" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -1317,12 +1372,292 @@ r
                         <div class="share-container float-right">
                             <span id="btn-share" onclick="ChamaCompartilhar('???', '???', '#url')" class="justify-content-center"><i class="fas fa-share-alt mt-1"></i></span>
                         </div>
+                             </div> 
+                        </div>
+                        
+                       
                     </div>
                 </div>
               </div> <!-- FIM CARD -->
 
 
-              
+              <!-- Modal TURMAS-->
+                <div class="modal fade" id="turmasModal" tabindex="-1" aria-labelledby="turmasModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="turmasModalLabel">MÉTODO DE ANÁLISE E SOLUÇÃO DE PROBLEMAS - MASP</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+
+                            <div class="col-12">
+                                 <h5 class="modal-title">TURMAS DISPONÍVEIS</h5>
+                                 <hr>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <p><strong>Local:</strong><br> 
+                                São João da Boa Vista </p>
+                            </div>
+                            <div class="col">
+                                <strong>Pagamento no Cartão</strong><br>Não disponível
+                            </div>
+                            <div class="col">
+                                <strong>Valor</strong><br>R$ 1.750,00
+                            </div>
+                             
+                        </div>
+
+                        <div class="row no-gutters">
+                            
+                                <div class="btn-group-vertical w-100 btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-turmas  ">
+                                <input type="radio" name="options" id="option1" autocomplete="off"> 
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item p-2">
+                                                <strong>Período</strong><br>
+                                                2ª, 3ª, 4ª, 5ª e 6ª feira</li> 
+                                          </ul>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <div class="w-50 float-left">
+                                                        <strong>Início:</strong> <br>
+                                                        30/08/2021
+                                                        </div>
+                                                        <div class="w-50 float-left">
+                                                        <strong>Término:</strong><br>
+                                                        27/10/2021
+                                                    </div>
+                                                </li> 
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Horário</strong><br>
+                                                    18:00 às 22:00
+                                                </li>
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-2">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Vagas</strong><br>
+                                                    04</li>
+                                              </ul>
+                                        </div>
+                                    </div><!-- row -->
+                                </div> <!-- fim card -->
+                                </label>
+
+                                <label class="btn btn-turmas">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> 
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item p-2">
+                                                <strong>Período</strong><br>
+                                                2ª, 3ª, 4ª, 5ª e 6ª feira</li> 
+                                          </ul>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <div class="w-50 float-left">
+                                                        <strong>Início:</strong> <br>
+                                                        30/08/2021
+                                                        </div>
+                                                        <div class="w-50 float-left">
+                                                        <strong>Término:</strong><br>
+                                                        27/10/2021
+                                                    </div>
+                                                </li> 
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Horário</strong><br>
+                                                    18:00 às 22:00
+                                                </li>
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-2">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Vagas</strong><br>
+                                                    04</li>
+                                              </ul>
+                                        </div>
+                                    </div><!-- row -->
+                                </div> <!-- fim card -->
+                                </label>
+
+                                <label class="btn btn-turmas">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> 
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item p-2">
+                                                <strong>Período</strong><br>
+                                                2ª, 3ª, 4ª, 5ª e 6ª feira</li> 
+                                          </ul>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <div class="w-50 float-left">
+                                                        <strong>Início:</strong> <br>
+                                                        30/08/2021
+                                                        </div>
+                                                        <div class="w-50 float-left">
+                                                        <strong>Término:</strong><br>
+                                                        27/10/2021
+                                                    </div>
+                                                </li> 
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-3">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Horário</strong><br>
+                                                    18:00 às 22:00
+                                                </li>
+                                              </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-xl-2">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item p-2">
+                                                    <strong>Vagas</strong><br>
+                                                    04</li>
+                                              </ul>
+                                        </div>
+                                    </div><!-- row -->
+                                </div> <!-- fim card -->
+                                </label>
+
+                                <label class="btn btn-turmas">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 
+                                    <div class="card">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 col-sm-6 col-xl-3">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item p-2">
+                                                        <strong>Período</strong><br>
+                                                    2ª, 3ª, 4ª, 5ª e 6ª feira</li> 
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-xl-4">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item p-2">
+                                                        <div class="w-50 float-left">
+                                                            <strong>Início:</strong> <br>
+                                                            30/08/2021
+                                                        </div>
+                                                        <div class="w-50 float-left">
+                                                            <strong>Término:</strong><br>
+                                                            27/10/2021
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-xl-3">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item p-2">
+                                                        <strong>Horário</strong><br>
+                                                        18:00 às 22:00
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-xl-2">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item p-2">
+                                                        <strong>Vagas</strong><br>
+                                                    04</li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- row -->
+                                    </div> <!-- fim card -->
+                                </label>
+                            </div>
+                                 
+                             
+
+                            
+
+                             
+                        </div>
+
+                        
+
+                        
+                       
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                         <button type="button" class="btn btn-primary disabled"  data-dismiss="modal">Inscreva-se</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal TURMAS-->
+                <div class="modal fade" id="infoCursoModal" tabindex="-1" aria-labelledby="infoCursoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="turmasModalLabel">MÉTODO DE ANÁLISE E SOLUÇÃO DE PROBLEMAS - MASP</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                        <h4>Resumo</h4>
+                        <p>O Curso de Qualificação Profissional Confeiteiro tem por objetivo o desenvolvimento de competências relativas à fabricação de pães e similares, utilizando máquinas e equipamentos em conformidade com normas e legislações sanitárias, ambientais, de segurança no trabalho e da qualidade.</p>
+                        
+                        <h4>Requisito</h4>
+                        <p> O aluno deverá, no início do curso, ter no mínimo 16 anos de idade.</p>
+                        <p>O aluno deverá ter completado a 4ª série/ano do Nível Fundamental.</p>
+
+
+                        <p><strong>ÁREA</strong><br> 
+                        Alimentos e Bebidas</p>
+
+                        <p><strong>CARGA HORÁRIA</strong> <br>
+                        160 horas</p>
+
+                        <p><strong>UNIDADE</strong> <br>
+                        Escola Senai "Roberto Simonsen"<br>
+                        Rua Monsenhor Andrade, 298 - Brás | São Paulo CEP: 03008-000</p>
+
+                        <p><strong>TELEFONE</strong> <br> 
+                        11 3322-5000</p>
+
+                        <p><strong>E-MAIL</strong><br>
+                        <a href="mailto:senaibras@sp.senai.br" title="">senaibras@sp.senai.br</a></p>
+
+                        <p><strong>TURMA(S)</strong>  <br>
+                        Disponíveis</p>
+
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">FECHAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
               
 

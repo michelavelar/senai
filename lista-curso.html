@@ -842,9 +842,10 @@ fieldset[disabled] .btn-primary.active {
     }
     #filtro .card-header button {
         color: #666;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
+        padding: 10px 0;
     }
 
     #filtro .btn-group, 
@@ -855,12 +856,23 @@ fieldset[disabled] .btn-primary.active {
  
 
     #filtro .btn-filtro {
-        width: 100%;
-        font-size: 13px;
+        display: block;
+        width:95%;
+        font-size: 12px;
+        font-weight: normal;
         text-align: left;
         color: #666;
         border: none;
         border-radius: 0;
+        text-transform: inherit;
+        border-bottom: 1px solid #ccc;
+        margin-left: 12px;
+        word-wrap:break-word;
+        white-space: normal !important;
+        clear:left;
+    }
+    #filtro .btn-filtro:last-child {
+        border: none;
     }
     #filtro .btn-filtro:hover {
         color: #fff;
@@ -933,11 +945,19 @@ fieldset[disabled] .btn-primary.active {
             font-size: 18px;
         }
 
+        .sub-area {
+            margin-left: 10px;
+        }
+
+        /*.sub-area h3 {
+
+        }*/
+
     }
 
     @media(min-width: 1200px) {
         .card-columns {
-            column-count: 3;
+            column-count: 2;
         }
     }
 
@@ -1119,11 +1139,11 @@ r
 
     
 
-    <div id="menulink" class="menu-button d-block d-md-none">
+    <!-- <div id="menulink" class="menu-button d-block d-md-none">
         <a href="#">Filtro</a>
-    </div>
+    </div> -->
         
-        <div id="filtro" class="col-1 col-md-3 col-xl-2 d-none d-md-block mt-2">
+        <div id="filtro" class="col-1 col-md-4 col-xl-3 d-none d-md-block mt-2">
 
               
 
@@ -1157,6 +1177,9 @@ r
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-primary btn-filtro ">
+            <input type="radio" name="options" id="option-3" autocomplete="off" onchange="location = '/cursos/construcao-civil-e-design-de-mobiliario/0' + GetQueryString(0,0,'');"> Construção Civil e Design de Mobiliário
+        </label>
           <label class="btn btn-outline-primary btn-filtro">
             <input type="radio" name="options" id="option1" autocomplete="off"> Administração e Gestão
         </label>
@@ -1231,7 +1254,78 @@ r
       </h2>
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+        
+        <div class="card-header sub-area" id="headingCapital">
+            <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCapital" aria-expanded="false" aria-controls="collapseCapital">
+                  Capital
+              </button>
+          </h4>
+      </div>
+
+      <div id="collapseCapital" class="collapse" aria-labelledby="headingCapital" data-parent="">
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Barra Funda
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Brás
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Santo Amaro
+            </label>
+        </div>
+    </div>
+
+    <div class="card-header sub-area" id="headingGrandeSP">
+            <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseGrandeSP" aria-expanded="false" aria-controls="collapseGrandeSP">
+                  Grande São Paulo
+              </button>
+          </h4>
+      </div>
+
+      <div id="collapseGrandeSP" class="collapse" aria-labelledby="headingGrandeSP" data-parent="">
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Barra Funda
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Brás
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Santo Amaro
+            </label>
+        </div>
+    </div>
+
+    <div class="card-header sub-area" id="headingInterior">
+            <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseInterior" aria-expanded="false" aria-controls="collapseInterior">
+                  Interior
+              </button>
+          </h4>
+      </div>
+
+      <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior" data-parent="">
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Barra Funda
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Brás
+            </label>
+            <label class="btn btn-outline-primary btn-filtro">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Santo Amaro
+            </label>
+        </div>
+    </div>
+
+
+
+
+
+      <!-- <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-outline-primary btn-filtro">
             <input type="radio" name="options" id="option1" autocomplete="off"> Barra Funda
         </label>
@@ -1241,7 +1335,7 @@ r
         <label class="btn btn-outline-primary btn-filtro">
             <input type="radio" name="options" id="option3" autocomplete="off"> Santo Amaro
         </label>
-    </div>
+    </div> -->
     </div>
   </div>
 
@@ -1280,7 +1374,7 @@ r
 </div>
                 
         </div>
-        <div class="col-11 col-sm-11 col-md-9 col-xl-10 offset-1 offset-sm-0">
+        <div class="col-12 col-sm-11 col-md-8 col-xl-9   offset-sm-0">
             
             <h1 class="text-black ">Pós Graduação</h1>
             <hr>
